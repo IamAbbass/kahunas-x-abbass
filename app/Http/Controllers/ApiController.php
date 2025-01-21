@@ -12,6 +12,10 @@ use Illuminate\Validation\ValidationException;
 
 class ApiController extends Controller {
 
+    public function ping(Request $request){
+        return $request;
+    }
+
     public function register(Request $request) {
         try {
             $validated = $request->validate([
